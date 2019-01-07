@@ -1,0 +1,13 @@
+@import "../burger";
+
+.menu-button {
+	display: inline-block;
+}
+
+.burger-icon {
+	@include burger(40px, 4px, 10px, #fff);
+}
+
+.menu-button.is-active .burger-icon {
+	@include burger-to-cross;
+}
